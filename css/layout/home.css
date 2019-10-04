@@ -1,0 +1,269 @@
+/* Customização da section HOME */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+/* Section Home */
+.container-home{
+    grid-row: 2 / 3;
+    background-image: url(../../img/fogo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+    .home-article{
+        padding: 5%;
+    }
+    .home-slide{
+        height: 50%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+        .slide{
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: absolute;
+            z-index: 0;
+            opacity: 0;
+        }      
+        .home-article p{
+            color: white;
+            font-family: 'Cabin', sans-serif;
+            font-size: 1.3em;
+            text-align: left;
+            line-height: 25pt;
+            margin-bottom: 5%;
+            padding: 10% 0;
+        }
+        .home-article a{
+            color: white;
+            font-weight: 600;
+            font-family: 'Cabin', sans-serif;
+            font-size: 1.3em;
+            border: solid 2px white;
+            padding: 3% 7%;
+            border-radius: 30%;
+            float: right;
+        }
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 320px de LARGURA  */
+    @media screen and (min-width: 320px){
+
+/* Section Home */
+    .home-article p{
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .home-article a{
+        font-size: 1em;
+    }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 375px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 375px) and (min-height: 800px){
+    /* Section Home */
+    .home-article p{
+        font-size: 1.5em;
+        margin-bottom: 13%;
+    }
+    .home-article a{
+        font-size: 1.5em;
+    }
+
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 411px de LARGURA e MIN 731px ALTURA  */
+@media screen and (min-width: 411px) and (min-height: 731px){
+    /* Section Home */
+    .home-article p{
+        font-size: 1.5em;
+        margin-bottom: 13%;
+    }
+    .home-article a{
+        font-size: 1.5em;
+    }
+    
+}
+
+/*AJUSTE DE TELA WIDTH 568px e Orientação Paisagem */
+@media screen and (min-width: 568px) and (orientation: landscape){
+    .home-slide{
+        height: 60%;
+        width: 100%;
+    }    
+    .home-article{
+        padding: 2% 5%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+        .home-article p{
+            font-size: 1em;
+            line-height: 15pt;
+            width: 70%;
+            display: inline-block;
+            
+        }
+        .home-article a{
+            font-size: 1em;
+            padding: 12%;
+            display: inline-block;
+    
+        }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 768px de LARGURA  */
+@media screen and (min-width: 768px){
+
+    /* Section Home */
+    .home-slide{
+        height: 60%;
+    }   
+        .home-article p{
+            font-size: 2.5em;
+            line-height: 38pt;
+            margin-bottom: 2%;
+        }
+        .home-article a{
+            font-size: 1.8em;
+        }
+}
+
+/*--------------------------------------*/
+
+/* AJUSTE DE LARGURA 812px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 812px) and (orientation:  landscape){
+    .home-slide{
+        height: 60%;
+        width: 100%;
+    }    
+    .home-article{
+        padding: 2%;
+    }
+        .home-article p{
+            font-size: 1.4em;
+            line-height: 20pt;
+            width: 70%;
+            display: inline-block;
+        }
+        .home-article a{
+            font-size: 1.5em;
+            padding: 5%;
+            display: inline-block;
+        }
+}
+
+/*-----------------------------------------------*/
+   
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px){
+   
+/* Section Home */
+.home-article p{
+    font-size: 3.5em;
+    line-height: 45pt;
+    margin-bottom: 3%;
+}
+.home-article a{
+    font-size: 2.5em;
+}
+   
+   /* Section Empresa */
+   .container-empresa{
+       background-position: center;
+       background-size: cover;
+   }
+       .container-empresa p{
+           font-size: 2.8em;
+       }
+       .empresa-article h2{
+           font-size: 5em;
+       }
+       .empresa-icon{
+           font-size: 7em;
+       }
+}
+
+/*------------------------------------------*/
+
+/* AJUSTE DE LARGURA 1024px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    /* Section Home */
+    .home-article p{
+        font-size: 2em;
+        line-height: 32pt;
+        margin-bottom: 3%;
+    }
+}
+
+/*-----------------------------------------------*/
+
+
+/*  AJUSTE DESKTOP 1280px   */  
+@media screen and (min-width: 1280px){
+    .home-slide{
+        height: 100%;
+        width: 98,5vw;
+        position: relative;
+    }
+    .home-article{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 0, 0, 0.836);
+        flex-direction: column;
+        top: 40%;
+        text-align: center;
+        padding: 2%;
+        height: 35%;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .home-description{
+        font-size: 1em;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0;
+    }
+        .home-description p{
+            text-align: left;
+            font-size: 1.5rem;
+            letter-spacing: 2pt;
+            line-height: 30pt;
+            margin-left: 15%;
+        }
+    .home-link{
+       display: none;
+    }
+}
+
+/*-----------------------------------------------*/
+
+/*  AJUSTE DESKTOP 1280 X 1024  */ 
+@media screen and (min-width: 1280px) and (min-height: 1024px){
+        .home-description p{
+            font-size: 1.8rem;
+        }
+}
+
+/*------------------------------------------------*/
+
+/* AJUSTE MOBILE 1366px ORIENTAÇÂO PAISAGEM  */
+@media screen and (min-width: 1366) and (orientation: landscape){
+
+}
+

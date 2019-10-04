@@ -1,0 +1,343 @@
+/* Customização da section EMPRESA */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+/* Section Empresa */
+.container-empresa{
+    grid-row: 3 / 4;
+    background-image: url(../../img/empresa.png);
+    background-attachment: fixed;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 6% 6%;
+}
+    .empresa-article{
+        width: 100%;
+        height: 30%;
+        margin: 0 0 10% 0;
+        box-sizing: border-box;
+        opacity: 0;
+    }   
+        .container-empresa p{
+            font-size: 100%;
+            color: white;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .empresa-article h2{
+            font-size: 2em;
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+        .empresa-icon{
+            grid-column: 1 / 2;  
+            font-size: 3.5em;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 320px de LARGURA  */
+@media screen and (max-width: 320px){
+
+/* Section Empresa */
+.container-empresa{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2%;
+}
+
+.empresa-article h2{
+    font-size: 1.5em;
+}
+.empresa-article p{
+    font-size: .9rem;
+}
+
+.empresa-icon{
+    font-size: 2.5em;
+    margin-bottom: 1%;
+}
+
+.empresa-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1%;
+    padding: 0 3%;
+}
+
+    /* Grid EMPRESA */
+    .grid-01{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    .grid-02{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+    .grid-03{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 411px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 411px) and (min-height: 800px){
+
+    /* Section Empresa */
+    .container-empresa{
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 4%;
+    }
+
+    .empresa-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1%;
+        padding: 0;
+    }
+
+    /* Grid EMPRESA */
+    .grid-01{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    .grid-02{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+    .grid-03{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    .empresa-article{
+        margin: 0 0 6% 0;
+    }   
+
+    .empresa-icon i{
+        width: 100%;
+        font-size: 3rem;
+    }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 375px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 375px) and (min-height: 800px){
+
+/* Section Empresa */
+.empresa-grid{
+padding: 3% 3%;
+}
+.empresa-article{
+margin: 0 0 6% 0;
+}   
+.container-empresa p{
+    font-size: 1.3em;
+}
+
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 375px de LARGURA e MIN 800px ALTURA  */
+@media screen and (min-width: 375px) and (min-height: 800px){
+  
+    /* Section Empresa */
+   .empresa-grid{
+   padding: 3% 3%;
+   }
+   .empresa-article{
+   margin: 0 0 6% 0;
+   }   
+   .container-empresa p{
+       font-size: 1.3em;
+   }
+   
+}
+
+/*-----------------------------------------------*/
+/* AJUSTE DE TELA WIDHT 568PX - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 568px) and (orientation: landscape){
+    .container-empresa{
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .empresa-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 40% 60%;
+        grid-gap: 5%;
+        padding: 3% 4%;
+        box-sizing: border-box;
+    }
+    
+    /* Grid EMPRESA */
+    .grid-01{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        padding: 1% 4%;
+    }
+    .grid-02{
+        grid-column: 1 / 2;
+        grid-row: 2 / -1;
+    }
+    .grid-03{
+        grid-column: 2 / -1;
+        grid-row: 2 / -1;
+    }
+    .container-empresa p{
+        font-size: 70%;
+        line-height: 10pt;
+    }
+    .empresa-article h2{
+        font-size: 1.5em;
+        margin-bottom: 2%;
+    }
+    .empresa-icon{
+        font-size: 2.5em;
+    }
+}
+
+/*-------------------------------------*/
+
+/* AJUSTE DE TELA 768px de LARGURA  */
+@media screen and (min-width: 768px){
+
+     /* Section Empresa */
+     .container-empresa{
+        background-position: center;
+        background-size: cover;
+    }
+        .container-empresa p{
+            font-size: 2em;
+        }
+        .empresa-article h2{
+            font-size: 3.5em;
+        }
+        .empresa-icon{
+            font-size: 6em;
+        }
+}
+/*-----------------------------------------------*/
+
+/* AJUSTE DE LARGURA 812px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 812px) and (orientation:  landscape){
+    .container-empresa{
+        background-position: center;
+        background-size: cover;
+        }
+        .container-empresa p{
+            font-size: .7em;
+            line-height: 16pt;
+        }
+        .empresa-article h2{
+            font-size: 1.5em;
+        }
+        .empresa-icon{
+            font-size: 3em;
+        }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px){
+
+/* Section Empresa */
+   .container-empresa{
+    background-position: center;
+    background-size: cover;
+    }
+    .container-empresa p{
+        font-size: 2.4em;
+    }
+    .empresa-article h2{
+        font-size: 5em;
+    }
+    .empresa-icon{
+        height: 100%;
+    }
+        .empresa-icon i{
+            font-size: 6rem;
+        }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE TELA 1024px de LARGURA ORIENTAÇÃO PAISAGEM  */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .container-empresa{
+        background-position: center;
+        background-size: cover;
+        }
+        .container-empresa p{
+            font-size: 1.6em;
+            line-height: 22pt;
+        }
+        .empresa-article h2{
+            font-size: 3em;
+        }
+        .empresa-icon{
+            font-size: 4.5em;
+        }
+}
+
+/*-----------------------------------------------*/
+
+/*  AJUSTE DESKTOP 1280px  */  
+@media screen and (min-width: 1280px){
+    .container-empresa{
+        background-position: center;
+        background-size: cover; 
+    }
+        .container-empresa h2{
+            font-size: 2.5em;
+        }
+        .empresa-icon{
+            font-size: 5em;
+        }  
+        .container-empresa p{
+            font-size: 1.3em;
+            line-height: 30pt;
+        }      
+}
+
+
+/*-----------------------------------------------*/
+
+/*  AJUSTE DESKTOP 1280 X 1024  */    
+@media screen and (min-width: 1280px) and (min-height: 1024px){
+
+    
+
+
+}

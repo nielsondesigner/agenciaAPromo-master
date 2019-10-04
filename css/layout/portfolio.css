@@ -1,0 +1,206 @@
+/* Customização da section PORTFÓLIO */
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
+/* Section Portfólio */
+.container-portfolio{
+    grid-row: 4 / 5;
+    background-color: rgba(0, 0, 0, 0.911);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% repeat(3, 22%);
+    grid-gap: 1%;
+}
+   
+    .portfolio-bloco01{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .portfolio-bloco02{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .portfolio-bloco03{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .portfolio-bloco04{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .portfolio-bloco05{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .portfolio-bloco06{
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Cabin', sans-serif;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .portfolio-bloco01 img,
+    .portfolio-bloco02 img,
+    .portfolio-bloco03 img,
+    .portfolio-bloco04 img,
+    .portfolio-bloco05 img,
+    .portfolio-bloco06 img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+        .portfolio-bloco01 figcaption,
+        .portfolio-bloco02 figcaption,
+        .portfolio-bloco03 figcaption,
+        .portfolio-bloco04 figcaption,
+        .portfolio-bloco05 figcaption,
+        .portfolio-bloco06 figcaption{
+            color: white;
+            background: red;
+            padding: 5% 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            opacity: 0.8;
+        }
+
+/*---------------------------------------------*/
+
+@media screen and (min-width: 568px) and (orientation: landscape){
+    .container-portfolio{
+        display: grid;
+        grid-template-columns: repeat(2, 30%);
+        grid-template-rows: 17% repeat(3, 24%);
+        grid-gap: 2%;
+        justify-content: center;
+    }
+    .container-portfolio figcaption{
+        padding: 1%;
+    }
+}
+
+/*---------------------------------------------*/
+
+/* AJUSTE DE TELA 768px de LARGURA  */
+@media screen and (min-width: 768px){
+
+      /* Section Portfolio */
+      .container-portfolio figcaption{
+        font-size: 2em;
+    }
+}
+
+/*-----------------------------------------------*/
+
+/* AJUSTE DE LARGURA 812px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 812px) and (orientation:  landscape){
+    .container-title{
+        font-size: 2em;
+    }
+    .container-portfolio figcaption{
+        font-size: 1em;
+    }
+}
+
+/*-----------------------------------------------*/
+   
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px){
+    /* Section Portfolio */
+    .container-portfolio figcaption{
+    font-size: 2.3em;
+    }
+    .container-portfolio{
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 3%;
+    justify-content: center;
+    }
+}
+
+/*-----------------------------------------------
+
+/*AJUSTE DE TELA 1024px DE LARGURA - ORIENTAÇÃO PAISAGEM */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    /* Section Portfolio */
+    .container-portfolio{
+        grid-template-columns: repeat(2, 40%);
+        grid-gap: 1%;
+        justify-content: center;
+        }
+    
+    .container-portfolio figcaption{
+        font-size: 2em;
+        } 
+}
+
+/*-----------------------------------------------*/
+
+/*  AJUSTE DESKTOP 1280px    */  
+@media screen and (min-width: 1280px){
+    
+    .container-portfolio{
+        grid-row: 4 / 5;
+        background-color: rgba(0, 0, 0, 0.966);
+        display: grid;
+        grid-template-columns: repeat(2, 25%);
+        grid-template-rows: 20% repeat(3, 22%);
+        grid-gap: 2%;
+    }
+    .container-portfolio h2{
+        font-size: 4em;
+    }
+}
+
+/*  AJUSTE DESKTOP 1280px X 1024px    */  
+@media screen and (min-width: 1280px) and (min-height: 1024px){
+    
+}

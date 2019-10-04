@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+.trabConosco{
+    width: 100%;
+    height: 79vh;
+    background-color: rgba(0, 0, 0, 0.986);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+    .trabConosco h1{
+        font-size: 1.7em;
+        text-transform: capitalize;
+        margin-bottom: 3%;
+    }
+    .trabConosco label{
+        font-size: 1.2em;
+    }
+    input, textarea{
+        background-color: rgba(255, 0, 0, 0.658);
+        border: solid 1px white;
+        width: 100%;
+        color: white;
+    }
+
+    form{
+        width: 70%;
+    }
+
+.form-footer{
+    background-color: black;;
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 1px 1px 20px 4px red;
+}

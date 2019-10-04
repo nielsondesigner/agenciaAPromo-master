@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>APromo | Trabalhe Conosco</title>
+        <!--META TAGs-->
+        <meta charset="utf-8">
+        <meta name="author" content="JPMCavalcante">
+        <meta name="reply-to" content="jjpmcavalcante@gmail.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Agência de Produções de Eventos, Marketing  e ações promocionais.">
+        <meta name="keywords" content="publicidade, eventos, marketing, ações promocionais, web design, design, mídias sociais, social media, marketing digital">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="revisit-after" content="1 day">
+        <meta name="language" content="Portuguese">
+
+        <!--FRAMEWORK CSS-->
+        <link href="css/base/animate.css" rel="stylesheet" type="text/css">
+        <!--CSS BASE-->
+        <link href="css/base/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/base/main.css" rel="stylesheet" type="text/css">
+        <!--CSS LAYOUT-->
+        <link href="css/layout/navbar.css" rel="stylesheet" type="text/css">
+        <link href="css/layout/form.css" rel="stylesheet" type="text/css">
+        <!--CSS STATE-->
+        <link href="css/state/mov.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body class="formulario">
+    <!--CABECALHO-->
+    <header class="header-Nav">
+        <div class="header-NavLogo">
+            <img src="img/Logo_Apromo.png" alt="Logotipo Agencia Apromo">
+        </div>
+        <div class="header-NavBtn">
+            <img src="img/nav-open.svg" class="btnOpenMenu">
+        </div>
+        <!--MENU-->
+        <nav class="nav-Bar animated bounceInRight bounceOutRight">
+            <img src="img/nav-close.svg" class="btnCloseMenu">
+            <ul>
+                <li><a href="index.html#home" class="link1">home</a></li>
+                <li><a href="index.html#company" class="link2">empresa</a></li>
+                <li><a href="index.html#portfolio" class="link3">portfólio</a></li>
+                <li><a href="index.html#client" class="link4">clientes</a></li>
+                <li><a href="index.html#contact" class="link5">contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="trabConosco">
+        <h1 class="form-title">trabalhe conosco</h1>
+        <form action="email.php" method="POST" id="contato">
+            <fieldset>
+                <label for="Nome">Nome Completo:</label><br/>
+                <input name="Nome" type="text" /><br /><br/>
+                
+                <label for="Email">Seu email:</label><br/>
+                <input name="Email" type="text" placeholder="Seu melhor e-mail"/><br/><br/>
+                
+                <label for="Fone">Telefone:</label><br/>
+                <input name="Fone" type="number" placeholder="Seu melhor Telefone"/><br/><br/>
+
+                <label for="Imagem">Foto:</label><br/>
+                <input name="Imagem" type="file"/><br/><br/>
+
+                <label for="Curriculo">Currículo:</label><br/>
+                <input name="Curriculo" type="file"/><br/><br/>
+                
+                <label for="Mensagem">Mensagem:</label><br/>
+                <textarea name="Mensagem" rows="5" placeholder="Descrição fisicas e profissionais"></textarea><br/><br/>
+                
+                <input name="Enviar" type="submit" value="Enviar" style="width: auto;"/>
+            </fieldset>
+        </form>
+
+        <!--FOOTER-->
+        <footer class="form-footer">
+            <p>AGÊNCIA APROMO 2019&copy;</p>
+        </footer>
+    
+    <!--SCRIPTS-->
+    <script src="scripts/mov.js"></script>
+</body>
+
+</html>

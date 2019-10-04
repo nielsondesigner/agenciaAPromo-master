@@ -1,0 +1,69 @@
+.main{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 85vh repeat(7, 100vh);
+}
+
+    
+
+.container-title{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 2%;
+    font-weight: 900;
+}
+
+@media screen and (min-width: 768px){
+    .container-title{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 812px) and (orientation: landscape){
+    .main{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 85vh repeat(5, 100vh);
+    }
+}
+
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px){
+    .main{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15vh 85vh repeat(4, 100vh);
+    }
+}
+
+/* AJUSTE DE TELA 1024px de LARGURA  */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .main{
+        grid-template-rows: 15vh 85vh repeat(6, 100vh);
+    }
+}
+
+/*-------------------------------------------------------*/
+
+/*   AJUSTE DESKTOP 1280px   */   
+@media screen and (min-width: 1280px){
+    .main{
+        grid-template-rows: 9vh 91vh repeat(6, 100vh);
+    }
+}
+
+/*-------------------------------------------------------*/
+
